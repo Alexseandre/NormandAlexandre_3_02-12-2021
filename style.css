@@ -1,0 +1,26 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+}
+header > h1 
+{
+    font-family: shrikhand, sans-serif;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 1px 5px grey;
+    margin: 0;
+}
+header > p
+{
+    font-weight: bold;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+}
+.localPoint
+{
+    padding-right: 10px;
+}
