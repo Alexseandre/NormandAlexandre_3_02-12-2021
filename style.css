@@ -1,12 +1,30 @@
+a 
+{
+    text-decoration: none;
+    color: inherit;
+    display: inherit;
+}
+img
+{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+p, h1, h2, h3
+{
+    margin: 0;
+    padding: 0;
+}
 body
 {
     margin: 0;
     padding: 0;
-    font-family: roboto, sans-serif;
+    font-family: 'roboto', sans-serif;
 }
-header > h1 
+header > a
 {
-    font-family: shrikhand, sans-serif;
+    font-family: 'shrikhand', sans-serif;
     display: flex;
     justify-content: center;
     box-shadow: 0px 1px 5px grey;
@@ -18,9 +36,75 @@ header > p
     font-style: normal;
     display: flex;
     justify-content: center;
-    margin: 1%;
+    margin-top: 1px;
+    background-color: gray;
 }
 .localPoint
 {
     padding-right: 10px;
+}
+.headerLast
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 1%, 70%);
+}
+aside
+{
+    background-color: tomato;
+}
+.restau
+{
+    background-color:lightgray;
+}
+.conteneurArticle
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteneurImg
+{
+    width: 100%;
+    height: 80%;
+
+}
+.conteneurTextIcone
+{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.conteneurTexte 
+{
+    width: 50%;
+}
+.conteneurArticle > a 
+{
+    background-color: white;
+    border-radius: 15px;
+    width: 80%;
+    height: 17%;
+    margin-bottom: 30px;
+}
+.heartIcone
+{
+    display: flex;
+    background-color: tomato;
+    align-self: center;
+    font-size: 36px;
+    color: rgb(75, 73, 73);
+}
+footer
+{
+    background-color: rgb(87, 80, 80);
+    width: 100%;
+    padding-left: 2%;
+    color: white;
+}
+footer > h2
+{
+    font-family: 'shrikhand', sans-serif;
 }

@@ -1,28 +1,102 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <!--*****************META DONNEE*********-->
-        <title>Oh my food</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Nous souhaitons proposer à nos clients les menus de restaurants gastronomiques. Développé à New York dans un premier temps, nous souhaitons désormais élargir notre concept à la capitale de la gastronomie : Paris.">
-        <meta name="author" content="Ohmyfood!">
-        <meta name="county" content="France">
-        <link rel="icon" type="image/png" href="Booki/images/logo/apple-touch-icon.png"> 
-        <!--*****************LES CSS*********-->
-        <link rel="stylesheet" href="style.css"> 
-        <!--*****************POLICE D'ECRITURE*********-->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
-
-        <!--*******ICONE*******-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-    </head>
-    <header>
-            <h1>ohmyfood</h1>
-            <p><i class="fas fa-map-marker-alt localPoint"></i>Paris, Belleville</p>
-    </header>
-<body>
+<head>
+    <!--*****************META DONNEE*********-->
+    <title>Oh my food</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nous souhaitons proposer à nos clients les menus de restaurants gastronomiques. Développé à New York dans un premier temps, nous souhaitons désormais élargir notre concept à la capitale de la gastronomie : Paris.">
+    <meta name="author" content="Ohmyfood!">
+    <meta name="county" content="France">
+    <link rel="icon" type="image/png" href="Booki/images/logo/apple-touch-icon.png"> 
+    <!--*****************LES CSS*********-->
+    <link rel="stylesheet" href="style.css"> 
+    <!--*****************POLICE D'ECRITURE*********-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
     
+    <!--*******ICONE*******-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+<header>
+    <a href="index.html"><h1>ohmyfood</h1></a>
+    <p><i class="fas fa-map-marker-alt localPoint"></i>Paris, Belleville</p>
+    <div class="headerLast">
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+        <button>Explorer nos restaurants</button>
+    </div>
+</header>
+<aside>
+    <div class="function">
+        <h1>Fonctionnement</h1>
+        <ol>
+            <ul><i class="fas fa-mobile-alt icone"></i> Choisissez un restaurant</ul>
+            <ul><i class="fas fa-list icone"></i>Composez votre menu</ul>
+            <ul><i class="fab fa-acquisitions-incorporated icone"></i>Dégustez au restaurant</ul>
+        </ol>
+    </div>
+</aside>
+<body>
+    <section class="restau">
+        <h1>Restaurants</h1>
+        <div class="conteneurArticle">
+            <a href="#">
+                <article class="carte">
+                    <div class="conteneurImg"><img src="image/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image de restaurant"></div>
+                    <div class="conteneurTextIcone">
+                        <div class="conteneurTexte">
+                            <h2>Le titre du resto</h2>
+                            <p>Le petit truc en bas la</p>
+                        </div>
+                        <i class="far fa-heart heartIcone"></i>  
+                    </div> 
+                </article>
+            </a>  
+            <a href="#">
+                <article class="conteneurArticle">
+                    <div class="conteneurImg"><img src="image/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image de restaurant"></div>
+                    <div class="conteneurTextIcone">
+                        <div class="conteneurTexte">
+                            <h2>Le titre du resto</h2>
+                            <p>Le petit truc en bas la</p>
+                        </div>
+                        <i class="far fa-heart heartIcone"></i>  
+                    </div> 
+                </article>
+            </a>  
+            <a href="#">
+                <article class="conteneurArticle">
+                    <div class="conteneurImg"><img src="image/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image de restaurant"></div>
+                    <div class="conteneurTextIcone">
+                        <div class="conteneurTexte">
+                            <h2>Le titre du resto</h2>
+                            <p>Le petit truc en bas la</p>
+                        </div>
+                        <i class="far fa-heart heartIcone"></i>  
+                    </div> 
+                </article>
+            </a>  
+            <a href="#">
+                <article class="conteneurArticle">
+                    <div class="conteneurImg"><img src="image/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image de restaurant"></div>
+                    <div class="conteneurTextIcone">
+                        <div class="conteneurTexte">
+                            <h2>Le titre du resto</h2>
+                            <p>Le petit truc en bas la</p>
+                        </div>
+                        <i class="far fa-heart heartIcone"></i>  
+                    </div> 
+                </article>
+            </a>   
+        </div>                             
+    </section>
 </body>
+<footer>
+    <h2>ohmyfood</h2>
+    <a href="#"><i class="fas fa-utensils iconeFooter"></i>Proposer un restaurant</a>
+    <a href="#"><i class="fas fa-hands-helping iconeFooter"></i>Devenir partenaire</a>
+    <a href="#">Mention légales</a>
+    <a href="#">Contact</a>
+</footer>
 </html>
