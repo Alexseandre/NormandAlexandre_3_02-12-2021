@@ -1,3 +1,14 @@
+/*************REGLE GENERAL********/
+:root
+{
+    --normalblue:#0065FC;
+    --lightblue: #DEEBFF;
+    --grey: #F2F2F2;
+    --secondaire: #FF79DA;
+    --tertiaire: #99E2D0;
+    --primaire: #9356DC;
+
+}
 a 
 {
     text-decoration: none;
@@ -16,12 +27,13 @@ p, h1, h2, h3
     margin: 0;
     padding: 0;
 }
-body
+body, footer, header, aside
 {
     margin: 0;
     padding: 0;
     font-family: 'roboto', sans-serif;
 }
+/*************HEADER********/
 header > a
 {
     font-family: 'shrikhand', sans-serif;
@@ -37,7 +49,7 @@ header > p
     display: flex;
     justify-content: center;
     margin-top: 1px;
-    background-color: gray;
+    background-color: rgb(209, 209, 209);
 }
 .localPoint
 {
@@ -48,12 +60,76 @@ header > p
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: hsl(0, 1%, 70%);
+    background-color: var(--grey);
+    justify-content: center;
+    text-align: center;
+    padding: 10%;
 }
-aside
+.headerLast > p
 {
-    background-color: tomato;
+    margin-bottom: 10%;
 }
+button {
+    border: none;
+    border-radius: 100%;
+    padding: 3%;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    color: white;
+    font-style: normal;
+    font-family: 'roboto', sans-serif;
+    background: linear-gradient(#e66465, #9198e5);
+    
+}
+button:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+/*************FONCTIONNEMENT********/
+aside > h1 
+{
+    margin-left: 4%;
+    margin-bottom: 5%;
+    display: flex;
+    font-weight: bolder;
+}
+aside 
+{
+    padding-top: 7%;
+    padding-bottom: 9%;
+}
+ol
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+ol > li 
+{
+    background-color: var(--grey);
+    border-radius: 25px;
+    width: 80%;
+    margin-bottom: 20px;
+    display: flex;
+    padding-left: 9%;
+    align-self: center;
+    font-weight: bolder;
+    padding: 5%;
+    box-shadow: 1px 1px 7px rgb(195, 194, 194);
+    display: list-item;
+    list-style-position: inside;
+}
+.icone 
+{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-right: 4%;
+    color: gray;
+}
+/*************RESTAURANT ET ONGLETS********/
 .restau
 {
     background-color:lightgray;
@@ -67,19 +143,29 @@ aside
 .conteneurImg
 {
     width: 100%;
-    height: 80%;
+    height: 70%;
 
 }
 .conteneurTextIcone
 {
     width: 100%;
-    height: 20%;
+    height: 30%;
     display: flex;
     justify-content: space-between;
 }
 .conteneurTexte 
 {
-    width: 50%;
+    margin-left: 3%;
+    margin-top: 2%;
+    color: black;
+}
+.conteneurTexte > p
+{
+    font-weight: bold;
+}
+.conteneurTexte > h2
+{
+    font-weight: bolder;
 }
 .conteneurArticle > a 
 {
@@ -96,7 +182,9 @@ aside
     align-self: center;
     font-size: 36px;
     color: rgb(75, 73, 73);
+    margin-right: 4%;
 }
+/*************FOOTER********/
 footer
 {
     background-color: rgb(87, 80, 80);
@@ -107,4 +195,10 @@ footer
 footer > h2
 {
     font-family: 'shrikhand', sans-serif;
+}
+.restau > h1
+{
+    padding-top: 10%;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
