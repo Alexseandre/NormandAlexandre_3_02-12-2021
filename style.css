@@ -44,12 +44,11 @@ header > a
 }
 header > p
 {
-    font-weight: bold;
-    font-style: normal;
     display: flex;
     justify-content: center;
     margin-top: 1px;
-    background-color: rgb(209, 209, 209);
+    background-color: #EAEAEA;
+    padding: 10px;
 }
 .localPoint
 {
@@ -60,80 +59,120 @@ header > p
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--grey);
+    background-color: #F6F6F6;
     justify-content: center;
     text-align: center;
     padding: 10%;
 }
+.headerLast > h1
+{
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
 .headerLast > p
 {
     margin-bottom: 10%;
+    color: grey;
 }
 button {
     border: none;
     border-radius: 100%;
-    padding: 3%;
     text-align: center;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
+    border-radius: 50px;
     color: white;
-    font-style: normal;
-    font-family: 'roboto', sans-serif;
-    background: linear-gradient(#e66465, #9198e5);
-    
+    background: linear-gradient(to right bottom, var(--secondaire), var(--primaire));
+    padding: 20px 30px 20px 30px;
+    font-size: 17px;
+    font-weight: bold;
 }
-button:hover {
-    background-color: rgba(255, 0, 0, 1);
-}
+
 /*************FONCTIONNEMENT********/
 aside > h1 
 {
     margin-left: 4%;
     margin-bottom: 5%;
     display: flex;
-    font-weight: bolder;
 }
 aside 
 {
-    padding-top: 7%;
+    padding-top: 10%;
     padding-bottom: 9%;
 }
 ol
 {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    align-content: center;
+    margin: 0;
     padding: 0;
 }
-ol > li 
+.icone:hover
+{
+    color: var(--primaire);
+}
+li 
 {
     background-color: var(--grey);
     border-radius: 25px;
-    width: 80%;
+    width: 75%;
     margin-bottom: 20px;
     display: flex;
     padding-left: 9%;
     align-self: center;
-    font-weight: bolder;
+    font-weight: bold;
     padding: 5%;
     box-shadow: 1px 1px 7px rgb(195, 194, 194);
-    display: list-item;
-    list-style-position: inside;
+    counter-increment: li;
+    align-items: center;
+    text-align: justify;
+}
+li::before {
+    
+    content: counter(li);
+    margin-left: -35px;
+    margin-right: 10px;
+    background-color: var(--primaire);
+    height: 25px;
+    width: 25px;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    font-weight: normal;
+}
+li:hover
+{
+    background-color: #F5EDFF;
 }
 .icone 
 {
     display: flex;
-    justify-content: center;
     align-self: center;
     margin-right: 4%;
+    margin-left: 2.5%;
     color: gray;
 }
 /*************RESTAURANT ET ONGLETS********/
 .restau
 {
-    background-color:lightgray;
+    background-color:#F6F6F6;
+    padding-right: 30px;
+    padding-left: 30px;
 }
+.new
+{
+    position: absolute;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    background-color:#99E2D0; 
+    margin-right: 10px;
+    margin-top: 15px;
+    padding: 2px;
+    color:#008766;
+}
+
 .conteneurArticle
 {
     display: flex;
@@ -143,13 +182,19 @@ ol > li
 .conteneurImg
 {
     width: 100%;
-    height: 70%;
-
+    height: 75%;
+    display: flex;
+    justify-content: flex-end;
+}
+.carte 
+{
+    width: 100%;
+    height: 100%;
 }
 .conteneurTextIcone
 {
     width: 100%;
-    height: 30%;
+    height: 25%;
     display: flex;
     justify-content: space-between;
 }
@@ -159,46 +204,51 @@ ol > li
     margin-top: 2%;
     color: black;
 }
-.conteneurTexte > p
-{
-    font-weight: bold;
-}
 .conteneurTexte > h2
 {
     font-weight: bolder;
+    font-size: 19px;
 }
 .conteneurArticle > a 
 {
     background-color: white;
     border-radius: 15px;
-    width: 80%;
-    height: 17%;
+    width: 100%;
+    height: 250px;
     margin-bottom: 30px;
 }
 .heartIcone
 {
     display: flex;
-    background-color: tomato;
     align-self: center;
-    font-size: 36px;
+    font-size: 25px;
     color: rgb(75, 73, 73);
     margin-right: 4%;
+}
+.restau > h1
+{
+    padding-top: 15%;
+    margin-bottom: 20px;
 }
 /*************FOOTER********/
 footer
 {
-    background-color: rgb(87, 80, 80);
+    background-color: #353535;
     width: 100%;
-    padding-left: 2%;
     color: white;
+    padding: 25px; 
 }
 footer > h2
 {
-    font-family: 'shrikhand', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    padding: 0 0 15px 0;
+    font-family: 'shrikhand';
+    font-weight: lighter;
 }
-.restau > h1
+.iconeFooter
 {
-    padding-top: 10%;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    font-size: 10px;
+    width:20px;
 }
+/*************FOOTER********/
