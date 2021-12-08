@@ -1,0 +1,185 @@
+/*************REGLE GENERAL********/
+:root
+{
+    --normalblue:#0065FC;
+    --lightblue: #DEEBFF;
+    --grey: #F2F2F2;
+    --secondaire: #FF79DA;
+    --tertiaire: #99E2D0;
+    --primaire: #9356DC;
+}
+*, *::before, *::after
+{
+    box-sizing: border-box;
+}
+a 
+{
+    text-decoration: none;
+    color: inherit;
+    display: inherit;
+}
+img
+{
+    height: 100%;
+    width: 100%;
+}
+p, h1, h2, h3
+{
+    margin: 0;
+    padding: 0;
+}
+body, footer, header, aside
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+}
+/*************CSS MENU ********/
+.headerMenu 
+{
+    display: flex;
+}
+.ohmyfood
+{
+    display: flex;
+    font-family: 'shrikhand', sans-serif;
+    font-size: 30px;
+    width: 100%;
+    justify-content: center;
+}
+.iconeBack
+{
+    font-size: 20px;
+    align-self: center;
+    padding: 10px;
+}
+.conteneurMenu
+{
+    background-color:var(--grey);
+    border-radius: 45px 45px 0px 0px;
+    padding-top: 15px;
+    padding-bottom: 80px;
+    z-index: 1;
+    position: relative;
+    margin-top: -40px ;
+}
+.titleHeart
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+}
+.iconeHeart
+{
+    margin-right: 25px;
+    font-size: 25px;
+}
+
+.titleHeart h1
+{
+    font-family: 'shrikhand';
+    font-size: 30px;
+}
+.categorie
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.categorie > a
+{
+    width: 95%;
+    height: 25%;
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 10px rgb(216, 215, 215);
+}
+.onglets > p
+{
+    font-weight: bold;
+}
+.onglets
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.onglets h3, p
+{
+    font-size: 15px;
+}
+.onglets p
+{
+    display: block;
+    align-self: center;
+}
+.buttonMenu
+{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin: 30px 0px 0px 0px
+}
+.buttonMenu > button 
+{
+    padding: 15px 50px 15px 50px;
+    font-size: 15px;
+    font-weight: normal;
+    border: none;
+    border-radius: 100%;
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    background: linear-gradient(to right bottom, var(--secondaire), var(--primaire));
+}
+.conteneurMenu > h2::after
+{
+    border-bottom:solid 3px #99E2D0;
+    content: '';
+    display: block;
+    width: 40px;
+}
+.conteneurMenu > h2
+{
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 20px;
+}
+/*************FOOTER********/
+footer
+{
+    background-color: #353535;
+    width: 100%;
+    color: white;
+    padding: 25px; 
+}
+footer > h2
+{
+    font-style: italic;
+    font-size: 18px;
+    padding: 0 0 15px 0;
+    font-family: 'shrikhand';
+    font-weight: lighter;
+}
+footer a 
+{
+    padding-bottom: 8px;
+}
+footer a:hover
+{
+    color: var(--tertiaire);
+}
+.iconeFooter
+{
+    font-size: 10px;
+    width:20px;
+}
