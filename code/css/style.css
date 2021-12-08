@@ -148,6 +148,10 @@ li:hover
 {
     background-color: #F5EDFF;
 }
+li:hover :nth-child(1)
+{
+    color: var(--primaire);
+}
 .icone 
 {
     display: flex;
