@@ -34,7 +34,7 @@ body, footer, header, aside
     padding: 0;
     font-family: 'roboto', sans-serif;
 }
-/*************CSS MENU ********/
+/*************HEADER ********/
 .headerMenu 
 {
     display: flex;
@@ -53,6 +53,7 @@ body, footer, header, aside
     align-self: center;
     padding: 10px;
 }
+/*************CSS MENU ********/
 .conteneurMenu
 {
     background-color:var(--grey);
