@@ -62,7 +62,7 @@ body, footer, header, aside
     padding-bottom: 80px;
     z-index: 1;
     position: relative;
-    margin-top: -40px ;
+    margin-top: -40px;
 }
 .titleHeart
 {
@@ -83,16 +83,16 @@ body, footer, header, aside
     font-family: 'shrikhand';
     font-size: 30px;
 }
-.categorie
+section
 {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.categorie > a
+article
 {
-    width: 95%;
+    width: 1000%;
     height: 25%;
     display: flex;
     background-color: white;
@@ -107,7 +107,7 @@ body, footer, header, aside
 }
 .onglets
 {
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     padding: 10px;
@@ -129,7 +129,7 @@ body, footer, header, aside
     display: flex;
     margin: 30px 0px 0px 0px
 }
-.buttonMenu > button 
+button 
 {
     padding: 15px 50px 15px 50px;
     font-size: 15px;
@@ -140,6 +140,12 @@ body, footer, header, aside
     border-radius: 50px;
     color: white;
     background: linear-gradient(to right bottom, var(--secondaire), var(--primaire));
+    box-shadow: 2px 2px 5px gray;
+}
+.buttonMenu > button:hover{
+    filter: brightness(1.2);
+    box-shadow: 2px 2px 10px gray;
+    cursor: pointer;
 }
 .conteneurMenu > h2::after
 {
@@ -183,4 +189,33 @@ footer a:hover
 {
     font-size: 10px;
     width:20px;
+}
+
+/*************Animations ********/
+@keyframes slidemenu
+{
+    from {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.conteneurMenu .categorie1
+{
+    animation: slidemenu 0.5s ease-out;
+}
+.conteneurMenu .categorie2
+{
+    animation: slidemenu 1s ease-out;
+}
+.conteneurMenu .categorie3
+{
+    animation: slidemenu 1.5s ease-out;
+}
+.valid
+{
+    display: none;
 }

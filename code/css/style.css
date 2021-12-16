@@ -42,7 +42,6 @@ body, footer, header, aside
     font-family: 'shrikhand', sans-serif;
     display: flex;
     justify-content: center;
-    box-shadow: 0px 1px 5px grey;
     margin: 0;
 }
 .header1 > p
@@ -52,6 +51,7 @@ body, footer, header, aside
     margin-top: 1px;
     background-color: #EAEAEA;
     padding: 10px;
+    box-shadow: inset 0px 1px 1px rgb(194, 191, 191);
 }
 .localPoint
 {
@@ -77,26 +77,33 @@ body, footer, header, aside
     margin-bottom: 10%;
     color: grey;
 }
-button {
+.explore {
     border: none;
     border-radius: 100%;
     text-align: center;
     border-radius: 50px;
     color: white;
-    background: linear-gradient(to right bottom, var(--secondaire), var(--primaire));
+    background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+    box-shadow: 2px 2px 5px gray;
     padding: 20px 30px 20px 30px;
     font-size: 17px;
     font-weight: bold;
 }
+.explore:hover
+{
+    filter: brightness(1.2);
+    box-shadow: 2px 2px 10px gray;
+    cursor: pointer;
+}
 
 /*************FONCTIONNEMENT********/
-aside > h1 
+.fonction > h1 
 {
     margin-left: 4%;
     margin-bottom: 5%;
     display: flex;
 }
-aside 
+.fonction 
 {
     padding-top: 10%;
     padding-bottom: 9%;
@@ -108,6 +115,8 @@ ol
     align-content: center;
     margin: 0;
     padding: 0;
+    list-style: none;
+    counter-reset: li;
 }
 .icone:hover
 {
@@ -203,6 +212,12 @@ li:hover :nth-child(1)
     display: flex;
     justify-content: space-between;
 }
+.conteneurTextIcone :nth-child(3)
+{
+    align-self: center;
+    font-size: 25px;
+    margin-right: 4%;
+}
 .conteneurTexte 
 {
     margin: 10px;
@@ -225,11 +240,30 @@ li:hover :nth-child(1)
 }
 .heartIcone
 {
-    display: flex;
-    align-self: center;
-    font-size: 25px;
-    color: rgb(75, 73, 73);
-    margin-right: 4%;
+    font-size: 30px;
+    position:absolute;
+    right: 45px;
+}
+.heartDeux {
+    padding-top: 15px;
+}
+.fas.fa-heart
+{
+    color:transparent;
+    background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: scale(0);
+    transition-duration: 2s;
+}
+.heartDeux:hover > .fas.fa-heart
+{
+    transform: scale(1);
+}
+.heartDeux:hover .far.fa-heart
+{
+    transform: scale(0);
+    transition-delay:1.5s;
 }
 .restau > h1
 {
