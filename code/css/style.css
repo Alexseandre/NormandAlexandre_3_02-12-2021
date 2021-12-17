@@ -197,7 +197,7 @@ li:hover :nth-child(1)
 .conteneurImg
 {
     width: 100%;
-    height: 75%;
+    height: 200px;
     display: flex;
     justify-content: flex-end;
 }
@@ -224,12 +224,12 @@ li:hover :nth-child(1)
     font-size: 19px;
     width: 100%;
 }
-.conteneurArticle > a 
+.conteneurArticle a 
 {
     background-color: white;
     border-radius: 15px;
     width: 100%;
-    height: 230px;
+    height: 100%;
     margin-bottom: 30px;
     position: relative;
 }
@@ -238,7 +238,7 @@ li:hover :nth-child(1)
     font-size: 30px;
     position: absolute;
     bottom: 15px;;
-    right: 30px;
+    right: 10px;
 }
 .fas.fa-heart
 {
