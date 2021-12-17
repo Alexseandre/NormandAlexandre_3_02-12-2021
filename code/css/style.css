@@ -212,17 +212,11 @@ li:hover :nth-child(1)
     display: flex;
     justify-content: space-between;
 }
-.conteneurTextIcone :nth-child(3)
-{
-    align-self: center;
-    font-size: 25px;
-    margin-right: 4%;
-}
 .conteneurTexte 
 {
     margin: 10px;
     color: black;
-    width: 100%;
+    width: 50%;
 }
 .conteneurTexte > h2
 {
@@ -237,15 +231,14 @@ li:hover :nth-child(1)
     width: 100%;
     height: 230px;
     margin-bottom: 30px;
+    position: relative;
 }
 .heartIcone
 {
     font-size: 30px;
-    position:absolute;
-    right: 45px;
-}
-.heartDeux {
-    padding-top: 15px;
+    position: absolute;
+    bottom: 15px;;
+    right: 30px;
 }
 .fas.fa-heart
 {
@@ -254,7 +247,7 @@ li:hover :nth-child(1)
     background-clip: text;
     -webkit-background-clip: text;
     transform: scale(0);
-    transition-duration: 2s;
+    transition-duration: 1s;
 }
 .heartDeux:hover > .fas.fa-heart
 {
@@ -263,7 +256,7 @@ li:hover :nth-child(1)
 .heartDeux:hover .far.fa-heart
 {
     transform: scale(0);
-    transition-delay:1.5s;
+    transition-delay:1s;
 }
 .restau > h1
 {
