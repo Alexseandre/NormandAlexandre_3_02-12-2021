@@ -242,29 +242,6 @@ footer a:hover
 }
 
 /*************Animations ********/
-@keyframes slidemenu
-{
-    from {
-        transform: translateY(300px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-.conteneurMenu .categorie1
-{
-    animation: slidemenu 0.5s ease-out;
-}
-.conteneurMenu .categorie2
-{
-    animation: slidemenu 1s ease-out;
-}
-.conteneurMenu .categorie3
-{
-    animation: slidemenu 1.5s ease-out;
-}
 @keyframes rotate-center {
     0% {
         -webkit-transform: rotate(0);
@@ -275,3 +252,5 @@ footer a:hover
         transform: rotate(360deg);
     }
 }
+
+/*************TEST LOADER********/

@@ -197,7 +197,7 @@ li:hover :nth-child(1)
 .conteneurImg
 {
     width: 100%;
-    height: 200px;
+    height: 230px;
     display: flex;
     justify-content: flex-end;
 }
@@ -207,8 +207,7 @@ li:hover :nth-child(1)
 }
 .conteneurTextIcone
 {
-    width: 100%;
-    height: 25%;
+    
     display: flex;
     justify-content: space-between;
 }
@@ -216,7 +215,6 @@ li:hover :nth-child(1)
 {
     margin: 10px;
     color: black;
-    width: 50%;
 }
 .conteneurTexte > h2
 {
@@ -248,6 +246,7 @@ li:hover :nth-child(1)
     -webkit-background-clip: text;
     transform: scale(0);
     transition-duration: 1s;
+    transition: transform .3s;
 }
 .heartDeux:hover > .fas.fa-heart
 {
@@ -256,7 +255,7 @@ li:hover :nth-child(1)
 .heartDeux:hover .far.fa-heart
 {
     transform: scale(0);
-    transition-delay:1s;
+    transition-delay: .1s;
 }
 .restau > h1
 {
@@ -283,4 +282,228 @@ footer > h2
 {
     font-size: 10px;
     width:20px;
+}
+/*************MEDIA QUERIES********/
+@media screen and (min-width: 1023px)
+{
+    .restau > h1 
+    {
+        padding:20px;
+        margin:0;
+    }
+    .restau 
+    {
+        background-color: transparent;
+    }
+    .conteneurArticle
+    {
+        flex-direction: initial;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    .conteneurArticle > a 
+    {
+        width: 45%;
+    }
+    .fonction
+    {
+        padding: 10px;
+    }
+    .headerLast
+    {
+        padding: 20px;
+    }
+    li::before {
+        
+        content: counter(li);
+        margin-left: -75px;
+    }
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-self: center;
+    }
+    footer > h2
+    {
+        font-size: 40px;
+    }
+    footer > a 
+    {
+        display: flex; 
+        align-items: center;
+    }
+    footer > a:hover{
+        transform: scale(1.1);
+        transition-duration: 0.5s;
+        color: var(--secondaire);
+    }
+    .restau a:hover
+    {
+        transform: scale(1.01);
+        transition-duration: 0.5s;
+        border:solid 1px var(--primaire);
+    }
+}
+
+@media screen and (min-width: 1440px)
+{
+    
+    .conteneurImg
+    {
+        height: 500px;
+    }
+    .conteneurTexte h2, p
+    {
+        font-size: 30px;
+    }
+    ol > li
+    {
+        font-size: 40px;
+        padding: 80px;
+        margin-bottom: 50px;
+    }
+    .restau
+    {
+        background-color: whitesmoke;
+    }
+    .new
+    {
+        position: absolute;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        background-color:#99E2D0; 
+        margin-right: 10px;
+    }
+    li::before {
+        margin-left: -100px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+    }
+    .explore
+    {
+        margin-bottom: 60px;
+        font-size: 40px;
+    }
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-self: center;
+    }
+    footer > h2
+    {
+        font-size: 40px;
+    }
+    footer > a 
+    {
+        display: flex; 
+        align-items: center;
+    }
+    footer > a:hover{
+        transform: scale(1.1);
+        transition-duration: 0.5s;
+        color: var(--secondaire);
+    }
+    .restau a:hover
+    {
+        transform: scale(1.01);
+        transition-duration: 0.5s;
+        border:solid 1px var(--primaire);
+    }
+    .headerLast > p 
+    {
+        margin: 30px;
+    }
+}
+
+
+/*************LOADER********/
+
+.section {
+    background-color: white;
+    font-size: 40px;
+    position: fixed;
+    z-index: 1;
+    animation: hideAnimation 0s ease-in 3s;
+    animation-fill-mode: forwards;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader 
+{
+    width: 10px;
+    height: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: var(--primaire);
+    animation: grow 1.5s linear -.5s infinite;
+    margin-right: 10px;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    z-index: 2;
+}
+.section > p
+{
+    
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    padding-bottom: 100px;
+}
+.loader::before
+{
+    content: '';
+    width: 10px;
+    height: 35px;
+    position: absolute;
+    display: block;
+    right: 15px;
+    top: 0;
+    background-color: var(--tertiaire);
+    animation: grow 1.5s linear -1s infinite;
+}
+.loader::after
+{
+    content: '';
+    width: 10px;
+    height: 35px;
+    position: absolute;
+    display: block;
+    left: 15px;
+    top: 0;
+    background-color: var(--secondaire);
+    animation: grow 1.5s linear -1.5s infinite;
+}
+
+@keyframes grow 
+{
+    0% {transform:scaleY(0); opacity: 0;}
+    50% {transform: scaleY(1); opacity: 1;}
+    100% {transform:scaleY(0); opacity: 0;}
+    
+}
+
+
+@keyframes hideAnimation {
+    to {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
 }
