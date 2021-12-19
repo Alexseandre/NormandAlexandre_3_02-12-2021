@@ -287,10 +287,6 @@ footer a:hover
         margin-bottom: 30px;
         padding: 25px;
     }
-    .headerMenu
-    {
-        border-bottom:solid 1px var(--primaire);
-    }
     .img 
     {
         position: absolute;
