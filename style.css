@@ -247,7 +247,7 @@ li:hover :nth-child(1)
     -webkit-background-clip: text;
     transform: scale(0);
     transition-duration: 1s;
-    transition: transform .3s;
+    transition: transform .5s;
 }
 .heartDeux:hover > .fas.fa-heart
 {
@@ -256,7 +256,7 @@ li:hover :nth-child(1)
 .heartDeux:hover .far.fa-heart
 {
     transform: scale(0);
-    transition-delay: .1s;
+    transition-delay: .3s;
 }
 .restau > h1
 {
