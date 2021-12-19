@@ -72,6 +72,32 @@ body, footer, header, aside
     font-family: 'shrikhand';
     font-size: 30px;
 }
+.heartIcone
+{
+    font-size: 30px;
+    position: absolute;
+    right: 50px;
+    top: 45px;
+}
+.fas.fa-heart
+{
+    color:transparent;
+    background: linear-gradient(to right bottom, #FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: scale(0);
+    transition-duration: 1s;
+    transition: transform .3s;
+}
+.heartDeux:hover > .fas.fa-heart
+{
+    transform: scale(1);
+}
+.heartDeux:hover .far.fa-heart
+{
+    transform: scale(0);
+    transition-delay: .1s;
+}
 /*********************/
 section
 {
@@ -310,6 +336,29 @@ footer a:hover
         transform: rotate(360deg);
     }
     
+}
+@keyframes slidemenu
+{
+    from {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.conteneurMenu .categorie1
+{
+    animation: slidemenu 0.5s ease-out;
+}
+.conteneurMenu .categorie2
+{
+    animation: slidemenu 1s ease-out;
+}
+.conteneurMenu .categorie3
+{
+    animation: slidemenu 1.5s ease-out;
 }
 
 /*************TEST LOADER********/
