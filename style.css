@@ -43,6 +43,7 @@ body, footer, header, aside
     display: flex;
     justify-content: center;
     margin: 0;
+    padding: 10px;
 }
 .header1 > p
 {
@@ -179,7 +180,7 @@ li:hover :nth-child(1)
 .new
 {
     position: absolute;
-    width: 70px;
+    width: 80px;
     display: flex;
     justify-content: center;
     background-color:#99E2D0; 
@@ -187,6 +188,7 @@ li:hover :nth-child(1)
     margin-top: 15px;
     padding: 2px;
     color:#008766;
+    font-weight: bolder;
 }
 .conteneurArticle
 {
@@ -271,9 +273,12 @@ footer
     color: white;
     padding: 25px; 
 }
+footer > a 
+{
+    font-weight: normal;
+}
 footer > h2
 {
-    font-style: italic;
     font-size: 18px;
     padding: 0 0 15px 0;
     font-family: 'shrikhand';
@@ -373,6 +378,7 @@ footer > h2
         justify-content: center;
         background-color:#99E2D0; 
         margin-right: 10px;
+        font-weight: bolder;
     }
     li::before {
         margin-left: -100px;
